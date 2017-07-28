@@ -12,13 +12,13 @@ var numberOfResults = 3;
 
 var APIKey = "b39cf3becaf442229248617e42eaec5d";
 
-var welcomeMessage = location + " Guide. You can ask me for an attraction, the local news, or  say help. What will it be?";
+var welcomeMessage = location + " Guide. You can ask me for an attraction, or the top five things to do, or say help. What will it be?";
 
-var welcomeRepromt = "You can ask me for an attraction, the local news, or  say help. What will it be?";
+var welcomeRepromt = "You can ask me for an attraction, or the top five things to do, or say help. What will it be?";
 
-var locationOverview = "Port Saint Lucie is a city located in southeaster Florida. It's 120 miles south of Orlando, and 60 miles north of West Palm Beach. Port Saint Lucie has an estimated 185,132 residents as of 2016, and is one of the state of Florida's fastest growing cities.";
+var locationOverview = "Port Saint Lucie is a city located in southeastern Florida. Its 120 miles south of Orlando, and 60 miles north of West Palm Beach. Port Saint Lucie has an estimated 185,132 residents as of 2016, and is one of the state of Florida's fastest growing cities.";
 
-var HelpMessage = "Here are some things you  can say: Give me an attraction. Tell me about " + location + ". Tell me the top five things to do. Tell me the local news.  What would you like to do?";
+var HelpMessage = "Here are some things you  can say: Give me an attraction. Tell me about " + location + ". Tell me the top five things to do.  What would you like to do?";
 
 var moreInformation = "See your  Alexa app for  more  information."
 
@@ -46,8 +46,8 @@ var alexa;
 
 var attractions = [
     { name: "First Data Field", content: "Is the New York Mets spring training home. The stadium was built in 1988, and seats up to 7,000 sports fans.", location: "525 NW Peacock Blvd. Port St. Lucie, FL 34986", contact: "772 871 2100" },
-{ name: "Savannas Preserve State Park", content: "This preserve is one of the largest and most intact freshwater marshes on Floridas east coast. Vistors can visist the Environmental Education Center where they can learn about the importance of this unique and endangered natural system.  This is a great place to picnic, canoe, kayak, and fish, and take wildlife photography. The preserve has over 8 miles of multi-use trails for hiking, biking, and horseback riding. They also provide guided walks and canoe trips by reservation", location: "2541 Walton Road, Port St. Lucie, FL 34952", contact: "772 3982779" },
-{ name: "River Lilly Cruises", content: "The River Lily is a 34-passenger pontoon boat, licensed by the U.S. Coast Guard. The captain is Eddie Hamrick, who is also U.S. Coast Guard licensed Captain.  The cruise takes place on the St. Lucie Aquatic Preserve, and some parts of the river are so wild, they were used in the James Bond film Moonraker.  Each trip is different, but you're sure to see alligators, turtples, and lots of native birds, and maybe some otters and manatees.", location: "500 E Prima Vista Blvd, Port St Lucie, FL 34983", contact: "772 489 8344" },
+{ name: "Savannas Preserve State Park", content: "This preserve is one of the largest and most intact freshwater marshes on Florida’s east coast. Visitors can visit the Environmental Education Center where they can learn about the importance of this unique and endangered natural system.  This is a great place to picnic, canoe, kayak, and fish, and take wildlife photography. The preserve has over 8 miles of multi-use trails for hiking, biking, and horseback riding. They also provide guided walks and canoe trips by reservation", location: "2541 Walton Road, Port St. Lucie, FL 34952", contact: "772 3982779" },
+{ name: "River Lilly Cruises", content: "The River Lily is a 34-passenger pontoon boat, licensed by the U.S. Coast Guard. The captain is Eddie Hamrick, who is also U.S. Coast Guard licensed Captain.  The cruise takes place on the St. Lucie Aquatic Preserve, and some parts of the river are so wild, they were used in the James Bond film Moonraker.  Each trip is different, but you're sure to see alligators, turtles, and lots of native birds, and maybe some otters and manatees.", location: "500 E Prima Vista Blvd, Port St Lucie, FL 34983", contact: "772 489 8344" },
 { name: "Port St Lucie Botanical Gardens", content: "The Port St. Lucie Botanical Gardens is a welcome oasis of greenery in the heart of the city. The Gardens is located on 20 acres of property on the west side of Westmoreland Boulevard, just south of Port St. Lucie Blvd. on the banks of the North Fork of the St. Lucie River. The site boasts a lake with a fountain, paved public paths, beautiful gardens, a pavilion, a gift shop and a special place for weddings, as well as ample public parking. This beautiful sanctuary includes a butterfly garden, orchid room and rose garden. The Gardens also hosts a variety of children's programs, plant sales and the popular Fort Pierce Jazz and Blues Society concerts", location: "2410 SE Westmoreland Blvd, Port St Lucie, FL 34952", contact: "772 337 1959" },
 { name: "Spruce Bluff Preserve", content: "Two self-guiding interpretive trails cover this 97-acre site. One loop trail describes the site of the 1891 pioneer settlement and cemetery along the banks of the St. Lucie River. Another trail describes the significance of an early Native American mound and historic uses of native plants found along the trail. ", location: "611 Dar Ln, Port St Lucie, FL 34984", contact: "772 462 2526" },];
 
